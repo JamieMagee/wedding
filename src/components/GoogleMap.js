@@ -13,6 +13,7 @@ export class MapContainer extends Component {
           lat: 55.6778125,
           lng: 12.5741511
         }}
+        disableDefaultUI={true}
       >
         <Marker name={'Current location'} />
       </Map>
