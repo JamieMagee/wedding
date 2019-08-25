@@ -4,7 +4,6 @@ import './all.sass'
 import Footer from './Footer'
 import Head from './Head'
 import Hero from './Hero'
-import CurvedDecoration from './CurvedDecoration'
 
 export default ({ children }) => {
   return (

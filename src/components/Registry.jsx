@@ -1,4 +1,5 @@
 import React from 'react'
+import Section from 'react-bulma-components/lib/components/section'
 import Heading from 'react-bulma-components/lib/components/heading'
 
 import { graphql, useStaticQuery } from 'gatsby'
@@ -18,7 +19,7 @@ const query = () => {
     query {
       markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
         frontmatter {
-          savethedate {
+          registry {
             title
             content
           }
@@ -26,5 +27,5 @@ const query = () => {
       }
     }
   `)
-  return query.markdownRemark.frontmatter.savethedate
+  return query.markdownRemark.frontmatter.registry
 }

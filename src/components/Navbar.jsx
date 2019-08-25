@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { Navbar, Container } from 'react-bulma-components/full'
+import Navbar from 'react-bulma-components/lib/components/navbar'
 
 export default () => {
   const [open, setOpen] = useState(false)
   return (
-    <div class="hero-head">
+    <div className="hero-head">
       <Navbar active={open}>
         <Navbar.Brand>
           <Navbar.Burger onClick={() => setOpen(!open)} />
