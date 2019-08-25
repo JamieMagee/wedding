@@ -9,6 +9,7 @@ import Registry from '../components/Registry'
 import GoogleMap from '../components/GoogleMap'
 import SaveTheDate from '../components/SaveTheDate'
 import CurvedDecoration from '../components/CurvedDecoration'
+import Rsvp from '../components/Rsvp'
 
 export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro }) => (
   <div>
@@ -30,34 +31,20 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
       </Container>
     </Section>
     <GoogleMap />
+    <Section>
+      <Container>
+        <Rsvp />
+      </Container>
+    </Section>
   </div>
 )
 
-IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array
-  })
-}
-
-const IndexPage = ({ data }) => {
+const IndexPage = () => {
   return (
     <Layout>
       <IndexPageTemplate />
     </Layout>
   )
-}
-
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
-  })
 }
 
 export default IndexPage

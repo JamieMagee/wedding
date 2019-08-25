@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Footer from 'react-bulma-components/lib/components/footer'
 import Content from 'react-bulma-components/lib/components/content'
