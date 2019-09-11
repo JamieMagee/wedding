@@ -13,17 +13,15 @@ export default () => {
 
   const handleSubmit = event => {
     event.preventDefault()
-    const data = Object.keys(input).reduce((formData, key) => {
-      formData.append(key, input[key])
-      return formData
-    }, new FormData())
-    data.append('form-name', 'rsvp')
     fetch('/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
       },
-      body: data
+      body: encode({
+        'form-name': 'rsvp',
+        ...input
+      })
     })
     setSubmitted(true)
   }
@@ -95,6 +93,12 @@ export default () => {
       </Notification>
     )
   }
+}
+
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
 }
 
 const query = () => {
