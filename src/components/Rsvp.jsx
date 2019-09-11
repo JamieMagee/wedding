@@ -34,6 +34,7 @@ export default () => {
           <Label>Name</Label>
           <Control>
             <Input
+              name="name"
               value={input.name}
               onChange={event => {
                 setInput({ ...input, name: event.target.value })
@@ -45,6 +46,7 @@ export default () => {
           <Label>Email</Label>
           <Control>
             <Input
+              name="email"
               type="email"
               value={input.email}
               onChange={event => {
@@ -53,7 +55,7 @@ export default () => {
             />
           </Control>
         </Field>
-        <Field kind="group">
+        <Field kind="group" name="rsvp">
           <input
             class="is-checkradio"
             id="rsvpYes"
