@@ -5,7 +5,6 @@ import Hero from 'react-bulma-components/lib/components/hero'
 import Heading from 'react-bulma-components/lib/components/heading'
 
 import Navbar from '../components/Navbar'
-import CurvedDecoration from './CurvedDecoration'
 
 export default () => {
   const { title, subtitle } = query()
@@ -21,7 +20,6 @@ export default () => {
           </Heading>
         </Container>
       </Hero.Body>
-      <CurvedDecoration color="white" />
     </Hero>
   )
 }

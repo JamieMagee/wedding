@@ -17,7 +17,7 @@ export default () => {
       <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400" />
       <meta name="theme-color" content="#fff" />
 
-      <meta property="og:type" content="business.business" />
+      <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:url" content="/" />
       <meta property="og:image" content="/img/og-image.jpg" />
@@ -28,17 +28,19 @@ export default () => {
 }
 
 export const query = () => {
-  const { site } = useStaticQuery(
+  const site = useStaticQuery(
     graphql`
       query {
-        site {
-          siteMetadata {
-            title
-            description
+        markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+          frontmatter {
+            siteMetadata {
+              title
+              description
+            }
           }
         }
       }
     `
   )
-  return site.siteMetadata
+  return site.markdownRemark.frontmatter.siteMetadata
 }

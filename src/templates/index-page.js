@@ -8,7 +8,6 @@ import Layout from '../components/Layout'
 import Registry from '../components/Registry'
 import GoogleMap from '../components/GoogleMap'
 import SaveTheDate from '../components/SaveTheDate'
-import CurvedDecoration from '../components/CurvedDecoration'
 import Rsvp from '../components/Rsvp'
 
 export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro }) => (
@@ -18,13 +17,11 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
         <SaveTheDate />
       </Container>
     </Section>
-    <CurvedDecoration color="#fff9f5" flip />
     <Section className="events">
       <Container>
         <Events />
       </Container>
     </Section>
-    <CurvedDecoration color="white" backgroundColor="#fff9f5" />
     <Section className="registry">
       <Container>
         <Registry />
