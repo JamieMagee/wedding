@@ -7,9 +7,23 @@ import { Field, Label, Control, Input, Radio } from 'react-bulma-components/lib/
 import { graphql, useStaticQuery } from 'gatsby'
 
 export default () => {
-  const [input, setInput] = useState({})
+  const [input, setInput] = useState({ rsvp: true })
+
+  const handleSubmit = event => {
+    event.preventDefault()
+    const data = Object.keys(input).reduce((formData, key) => {
+      formData.append(key, input[key])
+      return formData
+    }, new FormData())
+    data.append('form-name', 'rsvp')
+    fetch('/', {
+      method: 'POST',
+      body: data
+    })
+  }
+
   return (
-    <div>
+    <form name="rsvp" method="POST" data-netlify="true" onSubmit={handleSubmit}>
       <Heading size={1}>RSVP</Heading>
       <Field>
         <Label>Name</Label>
@@ -58,12 +72,12 @@ export default () => {
       </Field>
       <Field>
         <Control>
-          <Button fullwidth={true} color="primary">
+          <Button fullwidth={true} submit={true} color="primary">
             Submit
           </Button>
         </Control>
       </Field>
-    </div>
+    </form>
   )
 }
 
