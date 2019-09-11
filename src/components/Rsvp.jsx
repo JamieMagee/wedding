@@ -55,10 +55,10 @@ export default () => {
             />
           </Control>
         </Field>
-        <Field kind="group" name="rsvp">
+        <Field kind="group">
           <input
             class="is-checkradio"
-            id="rsvpYes"
+            name="rsvp"
             type="radio"
             checked={input.rsvp}
             onChange={() => {
@@ -68,7 +68,7 @@ export default () => {
           <Label htmlFor="rsvpYes">Yes, I will be there</Label>
           <input
             class="is-checkradio"
-            id="rsvpNo"
+            name="rsvp"
             type="radio"
             checked={!input.rsvp}
             onChange={() => {
