@@ -1,30 +1,54 @@
 ---
 templateKey: index-page
 siteMetadata:
+  description: Jamie & Kat  – Saturday May 23rd 2020 – Copenhagen
   title: Jamie ❤️ Kat
-  description: a
 hero:
+  subtitle: Saturday May 23rd 2020 – Copenhagen
   title: Jamie & Kat
-  subtitle: Saturday May 23rd 2020 — Copenhagen
 savethedate:
-  title: Save the date
-  content: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nisl risus, congue in placerat in, accumsan a tellus. Sed facilisis dolor eget metus rutrum pellentesque. Donec ligula ante, sodales et felis in, efficitur pharetra tellus. Etiam tempus dolor vitae enim lobortis efficitur. Nam ante tortor, posuere in dictum non, hendrerit a arcu. Sed enim nisl, maximus in odio at, accumsan consequat neque. Ut eu metus nisl. Fusce id iaculis orci. Vivamus ac diam at quam suscipit suscipit. Sed molestie mauris ac purus volutpat, nec fringilla nisl rutrum. Nullam ornare, enim consequat ullamcorper aliquam, sapien velit ultricies risus, vitae interdum nisi dui in metus.
+  content: >-
+    We're delighted to invite you to our wedding on Saturday May 23rd 2020 in
+    Copenhagen!
+
+
+    Please let us know whether you can make it, using the form below. Please
+    RSVP as soon as possible, so we can confirm numbers and plan the day.
+
+
+    More details coming soon! 
+  title: 'Please join us '
 events:
-  - title: Ceremony
-    subtitle: TBC
-    content: |
+  - content: |
       Copenhagen City Hall
       Rådhuspladsen 1
       1599 København
-  - title: Reception
     subtitle: TBC
-    content: |
+    title: Ceremony
+  - content: |
       Apollo Kantine
       Nyhavn 2
       1051 København
+    subtitle: TBC
+    title: Reception
 registry:
-  title: Registry
   content: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nisl risus, congue in placerat in, accumsan a tellus. Sed facilisis dolor eget metus rutrum pellentesque. Donec ligula ante, sodales et felis in, efficitur pharetra tellus. Etiam tempus dolor vitae enim lobortis efficitur. Nam ante tortor, posuere in dictum non, hendrerit a arcu. Sed enim nisl, maximus in odio at, accumsan consequat neque. Ut eu metus nisl. Fusce id iaculis orci. Vivamus ac diam at quam suscipit suscipit. Sed molestie mauris ac purus volutpat, nec fringilla nisl rutrum. Nullam ornare, enim consequat ullamcorper aliquam, sapien velit ultricies risus, vitae interdum nisi dui in metus.
+    Dress code
+
+    The dress code is smart casual (think: no jeans, but also no need for a full
+    suit or a fancy wedding hat!). Most importantly, we'd like you to be happy
+    and comfortable!
+
+
+    Gifts
+
+    Your presence is present enough! Please don't worry about buying a gift. 
+
+
+    More questions?
+
+    We'll share more details nearer the date, but if you have a pressing
+    question you can email us at hello@katandjamie2020.com 
+  title: 'Questions? '
 ---
+
