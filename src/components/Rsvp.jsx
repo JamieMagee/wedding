@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 import Heading from 'react-bulma-components/lib/components/heading'
 import Notification from 'react-bulma-components/lib/components/notification'
+
+import Modal from 'react-modal'
 import Button from 'react-bulma-components/lib/components/button'
 import { Field, Label, Control, Input, Radio } from 'react-bulma-components/lib/components/form'
 
@@ -25,6 +27,10 @@ export default () => {
       })
     })
     setSubmitted(true)
+  }
+
+  const closeModal = () => {
+    setSubmitted(false)
   }
 
   return (
@@ -86,7 +92,25 @@ export default () => {
           </Control>
         </Field>
       </form>
-      {submitted ? <Notification>{content}</Notification> : <div />}
+      <Modal
+        isOpen={submitted}
+        onRequestClose={closeModal}
+        style={{
+          content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            transform: 'translate(-50%, -50%)',
+            padding: 0
+          }
+        }}
+      >
+        <Notification>
+          {content}
+          <Button remove onClick={() => setSubmitted(false)} />
+        </Notification>
+      </Modal>
     </div>
   )
 }
