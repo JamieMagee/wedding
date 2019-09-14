@@ -32,25 +32,29 @@ events:
     subtitle: TBC
     title: Reception
 questions:
-  content: >
-    Dress code
+  content: >-
+    ## Dress code
+
 
     The dress code is smart casual (think: no jeans, but also no need for a full
     suit or a fancy wedding hat!). Most importantly, we'd like you to be happy
     and comfortable!
 
 
-    Gifts
+    ## Gifts
+
 
     Your presence is present enough! Please don't worry about buying a gift.
 
 
-    More questions?
+    ## More questions?
+
 
     We'll share more details nearer the date, but if you have a pressing
     question you can email us at hello@katandjamie2020.com
-  title: 'Questions?'
+  title: Questions?
 rsvp:
-  content: >
+  content: |
     asdasd
 ---
+
