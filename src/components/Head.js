@@ -21,8 +21,6 @@ export default () => {
       <meta property="og:title" content={title} />
       <meta property="og:url" content="/" />
       <meta property="og:image" content="/img/og-image.jpg" />
-
-      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     </Helmet>
   )
 }
