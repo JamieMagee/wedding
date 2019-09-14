@@ -16,8 +16,8 @@ savethedate:
     RSVP as soon as possible, so we can confirm numbers and plan the day.
 
 
-    More details coming soon! 
-  title: 'Please join us '
+    More details coming soon...
+  title: We're (finally) getting married!
 events:
   - content: |
       Copenhagen City Hall
