@@ -31,7 +31,7 @@ events:
       1051 København
     subtitle: TBC
     title: Reception
-registry:
+questions:
   content: >
     Dress code
 
@@ -42,13 +42,13 @@ registry:
 
     Gifts
 
-    Your presence is present enough! Please don't worry about buying a gift. 
+    Your presence is present enough! Please don't worry about buying a gift.
 
 
     More questions?
 
     We'll share more details nearer the date, but if you have a pressing
-    question you can email us at hello@katandjamie2020.com 
+    question you can email us at hello@katandjamie2020.com
   title: 'Questions? '
 ---
 

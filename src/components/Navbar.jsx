@@ -13,7 +13,7 @@ export default () => {
           <Navbar.Container position="end">
             <Navbar.Item>Home</Navbar.Item>
             <Navbar.Item>Event</Navbar.Item>
-            <Navbar.Item>Registry</Navbar.Item>
+            <Navbar.Item>Questions</Navbar.Item>
           </Navbar.Container>
         </Navbar.Menu>
       </Navbar>

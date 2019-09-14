@@ -5,7 +5,7 @@ import Container from 'react-bulma-components/lib/components/container'
 
 import Events from '../components/Events'
 import Layout from '../components/Layout'
-import Registry from '../components/Registry'
+import Questions from '../components/Questions'
 import GoogleMap from '../components/GoogleMap'
 import SaveTheDate from '../components/SaveTheDate'
 import Rsvp from '../components/Rsvp'
@@ -22,9 +22,9 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
         <Events />
       </Container>
     </Section>
-    <Section className="registry">
+    <Section className="questions">
       <Container>
-        <Registry />
+        <Questions />
       </Container>
     </Section>
     <GoogleMap />

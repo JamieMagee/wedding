@@ -60,8 +60,8 @@ collections:
               - label: Content
                 name: content
                 widget: text
-          - label: Registry
-            name: registry
+          - label: Questions
+            name: questions
             widget: object
             fields:
               - label: Title
@@ -69,4 +69,4 @@ collections:
                 widget: string
               - label: Content
                 name: content
-                widget: text
+                widget: markdown

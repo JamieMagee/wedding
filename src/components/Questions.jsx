@@ -19,7 +19,7 @@ const query = () => {
     query {
       markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
         frontmatter {
-          registry {
+          questions {
             title
             content
           }
@@ -27,5 +27,5 @@ const query = () => {
       }
     }
   `)
-  return query.markdownRemark.frontmatter.registry
+  return query.markdownRemark.frontmatter.questions
 }
