@@ -4,20 +4,15 @@ import Container from 'react-bulma-components/lib/components/container'
 import Hero from 'react-bulma-components/lib/components/hero'
 import Heading from 'react-bulma-components/lib/components/heading'
 
-import Navbar from '../components/Navbar'
-
 export default () => {
   const { title, subtitle } = query()
   return (
     <Hero size="fullheight">
-      <Navbar />
       <Hero.Body>
         <div className="has-background-black is-overlay"></div>
         <Container center className="has-text-centered">
-          <Heading size={1}>{title}</Heading>
-          <Heading subtitle size={3}>
-            {subtitle}
-          </Heading>
+          <Heading>{title}</Heading>
+          <h2>{subtitle}</h2>
         </Container>
       </Hero.Body>
     </Hero>
