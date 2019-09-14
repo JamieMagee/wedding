@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Section from 'react-bulma-components/lib/components/section'
 import Container from 'react-bulma-components/lib/components/container'
 
@@ -12,25 +11,25 @@ import Rsvp from '../components/Rsvp'
 
 export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro }) => (
   <div>
-    <Section className="savethedate">
+    <Section>
       <Container>
         <SaveTheDate />
       </Container>
     </Section>
-    <Section className="events">
+    <Section className="has-background-light">
       <Container>
-        <Events />
+        <Rsvp />
       </Container>
     </Section>
-    <Section className="questions">
+    <Section>
       <Container>
-        <Questions />
+        <Events />
       </Container>
     </Section>
     <GoogleMap />
     <Section>
       <Container>
-        <Rsvp />
+        <Questions />
       </Container>
     </Section>
   </div>

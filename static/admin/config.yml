@@ -70,3 +70,10 @@ collections:
               - label: Content
                 name: content
                 widget: markdown
+          - label: RSVP
+            name: rsvp
+            widget: object
+            fields:
+              - label: Message
+                name: content
+                widget: markdown

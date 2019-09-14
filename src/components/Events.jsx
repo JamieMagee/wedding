@@ -3,9 +3,9 @@ import Columns from 'react-bulma-components/lib/components/columns'
 import Content from 'react-bulma-components/lib/components/content'
 import Card from 'react-bulma-components/lib/components/card'
 import Heading from 'react-bulma-components/lib/components/heading'
+import Section from 'react-bulma-components/lib/components/section'
 
 import { graphql, useStaticQuery } from 'gatsby'
-
 
 export default () => {
   const events = query()

@@ -8,6 +8,7 @@ import { Field, Label, Control, Input, Radio } from 'react-bulma-components/lib/
 import { graphql, useStaticQuery } from 'gatsby'
 
 export default () => {
+  const { content } = query()
   const [input, setInput] = useState({ rsvp: true })
   const [submitted, setSubmitted] = useState(false)
 
@@ -26,8 +27,8 @@ export default () => {
     setSubmitted(true)
   }
 
-  if (!submitted) {
-    return (
+  return (
+    <div>
       <form name="rsvp" method="POST" data-netlify="true" onSubmit={handleSubmit}>
         <Heading size={1}>RSVP</Heading>
         <Field>
@@ -85,16 +86,9 @@ export default () => {
           </Control>
         </Field>
       </form>
-    )
-  } else {
-    return (
-      <Notification color="success">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis
-        placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum{' '}
-        <a href="/">felis venenatis</a> efficitur. Sit amet, consectetur adipiscing elit
-      </Notification>
-    )
-  }
+      {submitted ? <Notification>{content}</Notification> : <div />}
+    </div>
+  )
 }
 
 const encode = data => {
@@ -108,13 +102,12 @@ const query = () => {
     query {
       markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
         frontmatter {
-          questions {
-            title
+          rsvp {
             content
           }
         }
       }
     }
   `)
-  return query.markdownRemark.frontmatter.questions
+  return query.markdownRemark.frontmatter.rsvp
 }
