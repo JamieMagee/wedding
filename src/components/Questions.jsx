@@ -1,4 +1,7 @@
 import React from 'react'
+import remark from 'remark'
+import recommended from 'remark-preset-lint-recommended'
+import remarkHtml from 'remark-html'
 import Heading from 'react-bulma-components/lib/components/heading'
 
 import { graphql, useStaticQuery } from 'gatsby'
@@ -8,7 +11,15 @@ export default () => {
   return (
     <div>
       <Heading size={1}>{title}</Heading>
-      <p>{content}</p>
+      <p
+        dangerouslySetInnerHTML={{
+          __html: remark()
+            .use(recommended)
+            .use(remarkHtml)
+            .processSync(content)
+            .toString()
+        }}
+      ></p>
     </div>
   )
 }

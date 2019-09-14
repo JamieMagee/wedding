@@ -27,7 +27,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
       </Container>
     </Section>
     <GoogleMap />
-    <Section>
+    <Section className="questions">
       <Container>
         <Questions />
       </Container>
