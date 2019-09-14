@@ -13,10 +13,60 @@ collections:
         label: 'Landing Page'
         name: 'index'
         fields:
-          - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page' }
-          - {
-              label: 'Site metadata',
-              name: siteMetadata,
-              widget: object,
-              fields: [{ label: Title, name: title, widget: string }, { label: Description, name: description, widget: text }],
-            }
+          - label: 'Template Key'
+            name: 'templateKey'
+            widget: 'hidden'
+            default: 'index-page'
+          - label: 'Site metadata'
+            name: siteMetadata
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: text
+          - label: 'Hero'
+            name: hero
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Subtitle
+                name: subtitle
+                widget: string
+          - label: 'Save the date'
+            name: savethedate
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Content
+                name: content
+                widget: text
+          - label: Events
+            name: events
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Subtitle
+                name: subtitle
+                widget: string
+              - label: Content
+                name: content
+                widget: text
+          - label: Registry
+            name: registry
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Content
+                name: content
+                widget: text
