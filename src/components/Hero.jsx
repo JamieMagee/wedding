@@ -11,8 +11,10 @@ export default () => {
       <Hero.Body>
         <div className="has-background-black is-overlay"></div>
         <Container center className="has-text-centered">
-          <Heading>{title}</Heading>
-          <h2>{subtitle}</h2>
+          <Heading textWeight="normal">{title}</Heading>
+          <Heading subtitle renderAs="h2">
+            {subtitle}
+          </Heading>
         </Container>
       </Hero.Body>
     </Hero>
