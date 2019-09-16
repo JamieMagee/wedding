@@ -9,7 +9,6 @@ export default () => {
   return (
     <Hero size="fullheight">
       <Hero.Body>
-        <div className="has-background-black is-overlay"></div>
         <Container center className="has-text-centered">
           <Heading textWeight="normal">{title}</Heading>
           <Heading subtitle renderAs="h2">
