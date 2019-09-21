@@ -15,9 +15,16 @@ export class MapContainer extends Component {
         }}
         disableDefaultUI={true}
       >
-        <Marker name={'Københavns Rådhus'} position={{ lat: 55.67594, lng: 12.56553 }} />
-
-        <Marker name={'Apollo Kantine'} position={{ lat: 55.68333, lng: 12.58333 }} />
+        <Marker
+          name={'Københavns Rådhus'}
+          position={{ lat: 55.67594, lng: 12.56553 }}
+          onClick={() => window.open('https://goo.gl/maps/xEpcfLJT1BzvEqgR8', '_blank')}
+        />
+        <Marker
+          name={'Apollo Kantine'}
+          position={{ lat: 55.68333, lng: 12.58333 }}
+          onClick={() => window.open('https://goo.gl/maps/XLHobw14qD44w9Zb9', '_blank')}
+        />
       </Map>
     )
   }
