@@ -38,22 +38,25 @@ questions:
   content: >-
     ## Dress code
 
+
     The dress code is smart casual (think: no jeans, but also no need for a full
-    suit or a fancy wedding hat!). Most importantly, we'd like you to be happy
-    and comfortable!
+    suit or a fancy wedding hat!). 
+
 
     ## Gifts
 
+
     Your presence is present enough! Please don't worry about buying a gift.
+
 
     ## More questions?
 
-    We'll share more details nearer the date, but if you have a pressing
-    question you can email us at [hello@katandjamie2020.com](mailto:hello@katandjamie2020.com)
+
+    We'll share more details nearer the date, but if you have a burning question
+    you can email us at <mailto:hello@katandjamie2020.com>
   title: Questions?
 rsvp:
-  contentYes: >-
-    See you in 2020
-  contentNo: >-
-    Sorry you can't come :(
+  contentNo: 'Sorry you can''t come :('
+  contentYes: Yay! We'll email you with more details nearer the day
 ---
+
