@@ -32,6 +32,7 @@ export default () => {
   }
 
   const closeModal = () => {
+    setInput({ rsvp: true })
     setSubmitted(false)
   }
 
