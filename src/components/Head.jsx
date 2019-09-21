@@ -1,9 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import ReactGA from 'react-ga'
 import { graphql, useStaticQuery } from 'gatsby'
 
 export default () => {
   const { title, description } = query()
+  ReactGA.initialize('UA-701081-12')
   return (
     <Helmet>
       <html lang="en" />
