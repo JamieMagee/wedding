@@ -40,7 +40,7 @@ questions:
 
 
     The dress code is smart casual (think: no jeans, but also no need for a full
-    suit or a fancy wedding hat!). 
+    suit or a fancy wedding hat!).
 
 
     ## Gifts
@@ -56,7 +56,6 @@ questions:
     you can email us at <mailto:hello@katandjamie2020.com>
   title: Questions?
 rsvp:
-  contentNo: 'Sorry you can''t come :('
+  contentNo: '![](https://i.giphy.com/media/a9xhxAxaqOfQs/source.gif)'
   contentYes: Yay! We'll email you with more details nearer the day
 ---
-

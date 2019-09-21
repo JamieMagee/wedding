@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 
 import Heading from 'react-bulma-components/lib/components/heading'
 import Notification from 'react-bulma-components/lib/components/notification'
-
+import remark from 'remark'
+import recommended from 'remark-preset-lint-recommended'
+import remarkHtml from 'remark-html'
 import Modal from 'react-modal'
 import Button from 'react-bulma-components/lib/components/button'
 import { Field, Label, Control, Input, Radio } from 'react-bulma-components/lib/components/form'
@@ -112,7 +114,15 @@ export default () => {
         }}
       >
         <Notification>
-          {input.rsvp ? contentYes : contentNo}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: remark()
+                .use(recommended)
+                .use(remarkHtml)
+                .processSync(input.rsvp ? contentYes : contentNo)
+                .toString()
+            }}
+          />
           <Button remove onClick={() => setSubmitted(false)} />
         </Notification>
       </Modal>
