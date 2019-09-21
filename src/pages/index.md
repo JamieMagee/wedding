@@ -1,10 +1,10 @@
 ---
 templateKey: index-page
 siteMetadata:
-  description: Jamie & Kat  – Saturday May 23rd 2020 – Copenhagen
+  description: Jamie & Kat — Saturday May 23rd 2020 — Copenhagen
   title: Jamie & Kat
 hero:
-  subtitle: Saturday May 23rd 2020 – Copenhagen
+  subtitle: Saturday May 23rd 2020 — Copenhagen
   title: Jamie & Kat
 savethedate:
   content: >-
