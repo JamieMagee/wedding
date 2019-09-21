@@ -11,7 +11,7 @@ export default () => {
   return (
     <div>
       <Heading size={1}>{title}</Heading>
-      <p
+      <div
         dangerouslySetInnerHTML={{
           __html: remark()
             .use(recommended)
@@ -19,7 +19,7 @@ export default () => {
             .processSync(content)
             .toString()
         }}
-      ></p>
+      ></div>
     </div>
   )
 }
