@@ -74,6 +74,9 @@ collections:
             name: rsvp
             widget: object
             fields:
-              - label: Message
-                name: content
+              - label: 'Yes Message'
+                name: contentYes
+                widget: markdown
+              - label: 'No Message'
+                name: contentNo
                 widget: markdown

@@ -10,7 +10,7 @@ import { Field, Label, Control, Input, Radio } from 'react-bulma-components/lib/
 import { graphql, useStaticQuery } from 'gatsby'
 
 export default () => {
-  const { content } = query()
+  const { contentYes, contentNo } = query()
   const [input, setInput] = useState({ rsvp: true })
   const [submitted, setSubmitted] = useState(false)
 
@@ -42,6 +42,8 @@ export default () => {
           <Control>
             <Input
               name="name"
+              type="text"
+              required="required"
               value={input.name}
               onChange={event => {
                 setInput({ ...input, name: event.target.value })
@@ -55,6 +57,7 @@ export default () => {
             <Input
               name="email"
               type="email"
+              required="required"
               value={input.email}
               onChange={event => {
                 setInput({ ...input, email: event.target.value })
@@ -109,7 +112,7 @@ export default () => {
         }}
       >
         <Notification>
-          {content}
+          {input.rsvp ? contentYes : contentNo}
           <Button remove onClick={() => setSubmitted(false)} />
         </Notification>
       </Modal>
@@ -129,7 +132,8 @@ const query = () => {
       markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
         frontmatter {
           rsvp {
-            content
+            contentYes
+            contentNo
           }
         }
       }
