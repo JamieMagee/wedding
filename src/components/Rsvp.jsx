@@ -66,6 +66,7 @@ export default () => {
           <input
             class="is-checkradio"
             name="rsvp"
+            id="rsvpYes"
             type="radio"
             checked={input.rsvp}
             onChange={() => {
@@ -76,6 +77,7 @@ export default () => {
           <input
             class="is-checkradio"
             name="rsvp"
+            id="rsvpNo"
             type="radio"
             checked={!input.rsvp}
             onChange={() => {
