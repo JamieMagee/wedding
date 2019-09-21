@@ -49,7 +49,7 @@ questions:
     ## More questions?
 
     We'll share more details nearer the date, but if you have a pressing
-    question you can email us at hello@katandjamie2020.com
+    question you can email us at [hello@katandjamie2020.com](mailto:hello@katandjamie2020.com)
   title: Questions?
 rsvp:
   content: >
