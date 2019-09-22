@@ -17,7 +17,7 @@ savethedate:
 
 
     More details coming soon...
-  title: We're (finally) getting married!
+  title: We're getting married!
 events:
   - content: |
       Copenhagen City Hall
