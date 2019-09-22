@@ -31,9 +31,6 @@ events:
       1051 København
     subtitle: TBC
     title: Reception
-  - content: 'On the water, duh. '
-    subtitle: Ahoy!
-    title: Boat trip
 questions:
   content: >-
     ## Dress code
@@ -59,3 +56,4 @@ rsvp:
   contentNo: '![](https://i.giphy.com/media/a9xhxAxaqOfQs/source.gif)'
   contentYes: Yay! We'll email you with more details nearer the day
 ---
+
