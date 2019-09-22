@@ -124,7 +124,7 @@ export default () => {
                 .toString()
             }}
           />
-          <Button remove onClick={() => setSubmitted(false)} />
+          <Button remove onClick={closeModal} />
         </Notification>
       </Modal>
     </div>
