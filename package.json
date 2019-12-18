@@ -9,7 +9,7 @@
   "dependencies": {
     "bulma": "0.8.0",
     "bulma-extensions": "6.2.7",
-    "gatsby": "2.18.13",
+    "gatsby": "2.18.14",
     "gatsby-image": "2.2.37",
     "gatsby-plugin-netlify": "2.1.30",
     "gatsby-plugin-netlify-cms": "4.1.33",
@@ -21,7 +21,7 @@
     "gatsby-remark-images": "3.1.38",
     "gatsby-remark-relative-images": "0.2.3",
     "gatsby-source-filesystem": "2.1.42",
-    "gatsby-transformer-remark": "2.6.43",
+    "gatsby-transformer-remark": "2.6.44",
     "gatsby-transformer-sharp": "2.3.9",
     "google-maps-react": "2.0.2",
     "lodash": "4.17.15",
