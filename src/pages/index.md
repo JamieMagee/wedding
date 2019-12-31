@@ -36,7 +36,7 @@ questions:
     ## Getting around
 
 
-    **Public transport**
+    ### **Public transport**
 
 
     Copenhagen has a great public transport system that runs 24/7. From the
@@ -79,7 +79,7 @@ questions:
     Copenhagen"](https://www.visitcopenhagen.com/copenhagen/planning/transportation)
 
 
-    **Taxi**
+    ### **Taxi**
 
 
     Taxis are quite expensive in Denmark, but they are easy to book if you need
@@ -92,7 +92,7 @@ questions:
     Copenhagen.)
 
 
-    **By foot or bike**
+    ### **By foot or bike**
 
 
     Copenhagen is quite a small city, so it's still pretty easy to get around by
