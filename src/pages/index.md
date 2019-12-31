@@ -65,7 +65,7 @@ questions:
 
     1. You can buy a ticket from the DSB ticket office or ticket machines
 
-    2. You can download the DOT Mobilbilletter app on [Android](https://play.google.com/store/apps/details?id=dk.unwire.projects.dmm) or [iOS](https://apps.apple.com/se/app/dot-mobilbilletter/id494862453)
+    2. You can download the DOT Tickets app on [Android](https://play.google.com/store/apps/details?id=com.cellpointmobile.mticket.travelcard.dsb) or [iOS](https://apps.apple.com/dk/app/mobilperiodekort-hovedstaden/id582247244)
 
     3. You can buy a [Rejsekort Anonymous](https://www.rejsekort.dk/en/Bestil/Rejsekort-anonymt) from the DSB ticket office at the airport (this works like an Oyster card, and makes journeys cheaper than a physical or mobile ticket)
 
@@ -129,4 +129,3 @@ rsvp:
   contentNo: '![](https://i.giphy.com/media/a9xhxAxaqOfQs/source.gif)'
   contentYes: Yay! We'll email you with more details nearer the day
 ---
-
