@@ -16,11 +16,6 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
         <SaveTheDate />
       </Container>
     </Section>
-    <Section className="has-background-light">
-      <Container>
-        <Rsvp />
-      </Container>
-    </Section>
     <Section>
       <Container>
         <Events />
@@ -30,6 +25,11 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
     <Section className="questions">
       <Container>
         <Questions />
+      </Container>
+    </Section>
+    <Section className="has-background-light">
+      <Container>
+        <Rsvp />
       </Container>
     </Section>
   </div>
