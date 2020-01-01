@@ -9,25 +9,27 @@ import GoogleMap from '../components/GoogleMap'
 import SaveTheDate from '../components/SaveTheDate'
 import Rsvp from '../components/Rsvp'
 
-export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro }) => (
+export const IndexPageTemplate = () => (
   <div>
-    <Section>
+    <Section id="intro">
       <Container>
         <SaveTheDate />
       </Container>
     </Section>
-    <Section>
+    <Section id="where">
       <Container>
         <Events />
       </Container>
     </Section>
-    <GoogleMap />
-    <Section className="questions">
+    <Section id="map">
+      <GoogleMap />
+    </Section>
+    <Section id="faq" className="questions">
       <Container>
         <Questions />
       </Container>
     </Section>
-    <Section className="has-background-light">
+    <Section id="rsvp" className="has-background-light">
       <Container>
         <Rsvp />
       </Container>

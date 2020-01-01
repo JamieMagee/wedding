@@ -70,7 +70,7 @@ export default () => {
         </Field>
         <Field kind="group">
           <input
-            class="is-checkradio"
+            className="is-checkradio"
             name="rsvp"
             id="rsvpYes"
             type="radio"
@@ -81,7 +81,7 @@ export default () => {
           />
           <Label htmlFor="rsvpYes">Yes, I will be there</Label>
           <input
-            class="is-checkradio"
+            className="is-checkradio"
             name="rsvp"
             id="rsvpNo"
             type="radio"
