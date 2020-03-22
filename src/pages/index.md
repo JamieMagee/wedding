@@ -33,6 +33,16 @@ events:
     title: Reception
 questions:
   content: >-
+    ## Is the wedding going ahead with the coronavirus situation?
+
+    We've had a few questions about whether or not the wedding is going ahead with the current coronavirus situation. The short answer is that we don't know.
+
+
+    The longer answer is that we are hoping for the best, and planning for the worst. If necessary, we will still be getting married in a private ceremony, and will plan something to celebrate with all you lovely people at a later date.
+
+
+    We'll keep you updated once we know more.
+
     ## Getting around: Public transport
 
 
@@ -167,4 +177,3 @@ rsvp:
   contentNo: '![](https://i.giphy.com/media/a9xhxAxaqOfQs/source.gif)'
   contentYes: Yay! We'll email you with more details nearer the day
 ---
-
