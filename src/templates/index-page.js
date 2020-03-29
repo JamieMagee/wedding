@@ -29,11 +29,11 @@ export const IndexPageTemplate = () => (
         <Questions />
       </Container>
     </Section>
-    <Section id="rsvp" className="has-background-light">
+    {/* <Section id="rsvp" className="has-background-light">
       <Container>
         <Rsvp />
       </Container>
-    </Section>
+    </Section> */}
   </div>
 )
 
