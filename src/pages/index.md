@@ -4,20 +4,13 @@ siteMetadata:
   description: Jamie & Kat — Saturday May 23rd 2020 — Copenhagen
   title: Jamie & Kat
 hero:
-  subtitle: Saturday May 23rd 2020 — Copenhagen
+  subtitle: Saturday May 23rd 2020 — Online
   title: Jamie & Kat
 savethedate:
   content: >-
-    We're delighted to invite you to our wedding on Saturday May 23rd 2020 in
-    Copenhagen!
+    We’re delighted to invite you to our wedding on Saturday May 23rd 2020 online!
 
-
-    Please let us know whether you can make it, using the form below. Please
-    RSVP as soon as possible, so we can confirm numbers and plan the day.
-
-
-    More details coming soon...
-  title: We're getting married!
+  title: We’re getting married!
 events:
   - content: |
       Copenhagen City Hall
@@ -26,152 +19,32 @@ events:
     subtitle: TBC
     title: Ceremony
   - content: |
-      Apollo Kantine
-      Nyhavn 2
-      1051 København
+      Wherever you are
     subtitle: TBC
     title: Reception
 questions:
   content: >-
     ## Is the wedding going ahead with the coronavirus situation?
 
-    We've had a few questions about whether or not the wedding is going ahead with the current coronavirus situation. The short answer is that we don't know.
+    Yes! We’re just going online! We will be joined by a small group of people for the ceremony at City Hall, and we would love the rest of you to join us online.
 
-
-    The longer answer is that we are hoping for the best, and planning for the worst. If necessary, we will still be getting married in a private ceremony, and will plan something to celebrate with all you lovely people at a later date.
-
-
-    We'll keep you updated once we know more.
-
-    ## Getting around: Public transport
-
-
-    Copenhagen has a great public transport system that runs 24/7. From the
-    airport you can get the Metro, regional train, or bus into the city centre.
-
-
-    For planning journeys, use
-    [Rejseplanen.dk](https://www.rejseplanen.dk/webapp/index.html?language=en_EN)
-    or the
-    [Android](https://play.google.com/store/apps/details?id=de.hafas.android.rejseplanen&hl=en_US)
-    or [iOS](https://apps.apple.com/us/app/rejseplanen/id317007942) app. (Heads
-    up: Central station is called "Kobenhavn H")
-
-
-    The nearest metro stop for the ceremony is Rådhuspladsen (City Hall Square).
-    For the reception it's Kongens Nytorv (which is also where all the metro
-    lines connect).
-
-
-    There are a few different options to buy tickets to get around:
-
-
-    1. You can buy a ticket from the DSB ticket office or ticket machines
-
-    2. You can download the DOT Tickets app on
-    [Android](https://play.google.com/store/apps/details?id=com.cellpointmobile.mticket.travelcard.dsb)
-    or
-    [iOS](https://apps.apple.com/dk/app/mobilperiodekort-hovedstaden/id582247244)
-
-    3. You can buy a [Rejsekort
-    Anonymous](https://www.rejsekort.dk/en/Bestil/Rejsekort-anonymt) from the
-    DSB ticket office at the airport (this works like an Oyster card, and makes
-    journeys cheaper than a physical or mobile ticket)
-
-    4. You can buy a [Copenhagen Card](https://copenhagencard.com/) if you plan
-    on doing some sighseeing while you're here
-
-
-    For more info, check out VisitCopenhagen's guide ["How to get around in
-    Copenhagen"](https://www.visitcopenhagen.com/copenhagen/planning/transportation)
-
-
-    ## Getting around: Taxi
-
-
-    Taxis are quite expensive in Denmark, but they are easy to book if you need
-    one. The biggest companies are [Taxa](https://www.taxa.dk/en/) or
-    [Dantaxi](https://dantaxi4x48.dk/english)
-
-
-    If you call, speaking English will be fine. Both of these companies also
-    have an app that you can book on. (There is no Uber/Lyft etc. in
-    Copenhagen.)
-
-
-    ## Getting around: By foot or bike
-
-
-    Copenhagen is quite a small city, so it's still pretty easy to get around by
-    foot or by bike. You can hire a bike for an extended period of time from a
-    lot of bike shops, or you can get a [Donkey
-    Bike](https://www.donkey.bike/cities/bike-rental-copenhagen/) or an electric
-    [City Bike](https://bycyklen.dk/en/). If you're feeling brave you can also
-    rent a [Lime scooter](https://www.li.me/en-us/home)!
-
-
-    ## Where to stay
-
-
-    We have never stayed in a hotel in Copenhagen, so we don't have any personal
-    recommendations.
-
-
-    In terms of location, we think anywhere close to a metro station will be a
-    good bet, since it's so quick and runs 24/7.
-
-
-    The nearest metro stop for the ceremony is Rådhuspladsen (City Hall Square).
-    For the reception it's Kongens Nytorv (which is also where all the metro
-    lines connect).
-
-
-    ## What time?
-
-
-    We don't have exact times yet, because we can't book a time for the ceremony
-    until four months before the date. We'll let you know as soon as we can.
-
-
-    We need to be out of the reception venue by midnight. If you'd like to keep
-    the party going, we can always go out in the city after that...
-
-
-    ## Food and drinks
-
-
-    We'll send out a survey soon for any dietary requirements (vegetarian,
-    allergies etc). We have drinks covered for dinner (wine, beer or soft
-    drinks).
-
-
-    After dinner, keg beer is on us :) If you fancy something else, there'll be
-    a cash bar.
-
-
-
+    A full schedule for the day is coming soon...
 
     ## Dress code
 
-
-    The dress code is smart casual (think: no jeans, but also no need for a full
-    suit or a fancy wedding hat!).
-
+    The dress code was originally smart casual (think: no jeans, but also no need for a full suit or a fancy wedding hat!). We’ve heard that some people will still be dressing up just for fun (and we will, at least!). But honestly it’s also fine if you wear pyjamas. Just send us a picture!
 
     ## Gifts
 
+    We just want to see your lovely faces on Zoom! Please don't worry about buying a gift.
 
-    Your presence is present enough! Please don't worry about buying a gift.
+    ## How will the online bits work?
 
-
-
+    We will use Zoom for both the ceremony live-stream and the reception. We will send round these Zoom links and some more details soon. If you would like to test out your connection before the big day, we are hosting a drop-in session on Saturday 16th from 17:00 to 19:00 UK time. (Nothing exciting happening, but you can just dial in any time that suits you, say hi and get back to your Saturday). Please see your inbox for the trial Zoom link.
 
     ## More questions?
 
-
-    We'll share more details nearer the date, but if you have a burning question
-    you can email us at
-    [hello@katandjamie2020.com](mailto:hello@katandjamie2020.com)
+    We'll share more details ASAP, but if you also you can email us at [hello@katandjamie2020.com](mailto:hello@katandjamie2020.com)
   title: Questions?
 rsvp:
   contentNo: '![](https://i.giphy.com/media/a9xhxAxaqOfQs/source.gif)'
