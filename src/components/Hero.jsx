@@ -20,7 +20,6 @@ export default () => {
             <Navbar.Item href="#where">Where & when</Navbar.Item>
             <Navbar.Item href="#map">Map</Navbar.Item>
             <Navbar.Item href="#faq">FAQ</Navbar.Item>
-            <Navbar.Item href="#rsvp">RSVP</Navbar.Item>
           </Navbar.Container>
         </Navbar.Menu>
       </Navbar>
