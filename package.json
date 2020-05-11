@@ -38,9 +38,9 @@
     "react-ga": "2.7.0",
     "react-helmet": "5.2.1",
     "react-modal": "3.11.2",
-    "remark": "11.0.2",
+    "remark": "12.0.0",
     "remark-html": "11.0.1",
-    "remark-preset-lint-recommended": "3.0.4",
+    "remark-preset-lint-recommended": "4.0.0",
     "uuid": "7.0.2"
   },
   "keywords": [
