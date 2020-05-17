@@ -42,6 +42,10 @@ questions:
 
     We will use Zoom for both the ceremony live-stream and the reception. We will send round these Zoom links and some more details soon. If you would like to test out your connection before the big day, we are hosting a drop-in session on Saturday 16th from 17:00 to 19:00 UK time. (Nothing exciting happening, but you can just dial in any time that suits you, say hi and get back to your Saturday). Please see your inbox for the trial Zoom link.
 
+    ## Playlist
+
+    Would you like to add a song to the party playlist? Please email us at [hello@katandjamie2020.com](mailto:hello@katandjamie2020.com) with your suggestion. We'll share the finished playlist with everyone for the day.
+
     ## More questions?
 
     We'll share more details ASAP, but if you also you can email us at [hello@katandjamie2020.com](mailto:hello@katandjamie2020.com)
