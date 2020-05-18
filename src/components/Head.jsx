@@ -6,6 +6,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 export default () => {
   const { title, description } = query()
   ReactGA.initialize('UA-701081-12')
+  ReactGA.pageview('/');
   return (
     <Helmet>
       <html lang="en" />
