@@ -7,13 +7,18 @@ import Layout from '../components/Layout'
 import Questions from '../components/Questions'
 import GoogleMap from '../components/GoogleMap'
 import SaveTheDate from '../components/SaveTheDate'
-import Rsvp from '../components/Rsvp'
+import Spotify from '../components/Spotify'
 
 export const IndexPageTemplate = () => (
   <div>
     <Section id="intro">
       <Container>
         <SaveTheDate />
+      </Container>
+    </Section>
+    <Section className="has-background-light">
+      <Container>
+        <Spotify />
       </Container>
     </Section>
     <Section id="where">
