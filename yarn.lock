@@ -11613,27 +11613,28 @@ neo-async@^2.5.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-netlify-cms-app@2.13.4:
-  version "2.13.4"
-  resolved "https://registry.yarnpkg.com/netlify-cms-app/-/netlify-cms-app-2.13.4.tgz#20441f1039726ff792571db01028bf6da4fac73f"
-  integrity sha512-A6x1JVHyzIcznsHNYia9ax3YilbuNPkyZvE7iSyqacqOhQIhIyg9kg4E+tN9Z1Tl+UstlFn1fXA/1PrsOC8+8Q==
+netlify-cms-app@2.14.0:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-app/-/netlify-cms-app-2.14.0.tgz#5566599df92d4b49472d14ad7fc08b1662755c8f"
+  integrity sha512-FPLvm5XuTJ+fcsZbPTAUuHTpzbpXoKRVxU1edk4/DFiVJ+doItWOMdJGm9tPASLNSjoP/3t+HfLNH5QQf4X1TA==
   dependencies:
     "@emotion/core" "^10.0.35"
     "@emotion/styled" "^10.0.27"
     immutable "^3.7.6"
     lodash "^4.17.11"
     moment "^2.24.0"
+    netlify-cms-backend-azure "^1.1.0"
     netlify-cms-backend-bitbucket "^2.12.5"
     netlify-cms-backend-git-gateway "^2.11.6"
     netlify-cms-backend-github "^2.11.6"
     netlify-cms-backend-gitlab "^2.9.5"
     netlify-cms-backend-test "^2.10.5"
-    netlify-cms-core "^2.35.0"
+    netlify-cms-core "^2.36.0"
     netlify-cms-editor-component-image "^2.6.7"
-    netlify-cms-lib-auth "^2.2.12"
-    netlify-cms-lib-util "^2.11.5"
-    netlify-cms-locales "^1.19.0"
-    netlify-cms-ui-default "^2.11.6"
+    netlify-cms-lib-auth "^2.3.0"
+    netlify-cms-lib-util "^2.12.0"
+    netlify-cms-locales "^1.20.0"
+    netlify-cms-ui-default "^2.12.0"
     netlify-cms-widget-boolean "^2.3.4"
     netlify-cms-widget-code "^1.2.4"
     netlify-cms-widget-colorstring "^1.0.0"
@@ -11653,6 +11654,14 @@ netlify-cms-app@2.13.4:
     prop-types "^15.7.2"
     react-immutable-proptypes "^2.1.0"
     uuid "^3.3.2"
+
+netlify-cms-backend-azure@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-backend-azure/-/netlify-cms-backend-azure-1.1.0.tgz#c05d9646b9d57a99cee492bc334d494c12f3c48b"
+  integrity sha512-5VZufuopvUMX8MBT8CLaLEYptJVVm4xC0wiNB2Itm21EMlSjqYvH9nS/IY/EJCpDh+Ny19BK/07uxVc0QsL0UA==
+  dependencies:
+    js-base64 "^3.0.0"
+    semaphore "^1.1.0"
 
 netlify-cms-backend-bitbucket@^2.12.5:
   version "2.12.5"
@@ -11702,10 +11711,10 @@ netlify-cms-backend-test@^2.10.5:
   resolved "https://registry.yarnpkg.com/netlify-cms-backend-test/-/netlify-cms-backend-test-2.10.5.tgz#b06cf3adc425841d89689c1bf0c0658949fc48c9"
   integrity sha512-YHuMfAuzmDKd89YvMNfZh4F0DhGYGJVBVEV5H/MgOkPQcREG9SdLNjDyBcr/Y7mpjlu6MwR3s71BgMWIlFGpJg==
 
-netlify-cms-core@^2.35.0:
-  version "2.35.0"
-  resolved "https://registry.yarnpkg.com/netlify-cms-core/-/netlify-cms-core-2.35.0.tgz#30da0913b963a07eb8d88c2f19235a22cf76d59a"
-  integrity sha512-MEnAltTTmkBmUP5l/fBSL+3FNEg8aNyxkrLMoI8pWZYFRbAoHvA9QF8mK1FMDfEgJ4qlUY03eYRhJycmPrWCOA==
+netlify-cms-core@^2.36.0:
+  version "2.36.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-core/-/netlify-cms-core-2.36.0.tgz#553e58fa468261475c3f88338d4cac50d7044507"
+  integrity sha512-jrQxoH/3j3pfnyEPO2pi6YJilssGnfvj3f6XX9cfQfBVkoyM8sK/fBP2Q/slwi8Sl78KCS+5V/vaCvSS/vjzEw==
   dependencies:
     "@iarna/toml" "2.2.5"
     ajv "^6.10.0"
@@ -11757,24 +11766,24 @@ netlify-cms-editor-component-image@^2.6.7:
   resolved "https://registry.yarnpkg.com/netlify-cms-editor-component-image/-/netlify-cms-editor-component-image-2.6.7.tgz#471ce32302e27ab22f5204515cbe4b05b1c3ddb1"
   integrity sha512-aUkueCG+rLXcvY5Lfc77pllREpA0oY2V9v8Q+AXu08CvW61kigVTa/AKFTd1oGN8CDpoIr0uO8580tYskzjIRw==
 
-netlify-cms-lib-auth@^2.2.12:
-  version "2.2.12"
-  resolved "https://registry.yarnpkg.com/netlify-cms-lib-auth/-/netlify-cms-lib-auth-2.2.12.tgz#31506f5c573b65e06675d0256cfd0356d828dc7d"
-  integrity sha512-n4vZvw75h0k9T7BcTT+mODP6YpvuvgC9q6dZDU5EK1/tkQ1d3ZTq8Rm9W5VUJLSe5RyOdFBBgdS3M9MFo+R/0Q==
+netlify-cms-lib-auth@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-lib-auth/-/netlify-cms-lib-auth-2.3.0.tgz#0bf539bb1988721195b08e2df645e8d8851347ea"
+  integrity sha512-+428eI/EkRSchRslhtWagjgtbgN+CZhhHMUXTDmpjqPiRVCYeIfKDubDI2yUa2PVIATGFr0Z/v7tJQSdKDop5w==
 
-netlify-cms-lib-util@^2.11.5:
-  version "2.11.5"
-  resolved "https://registry.yarnpkg.com/netlify-cms-lib-util/-/netlify-cms-lib-util-2.11.5.tgz#ff7ea1f363d59ce919d39eca9941bf13c8c46c1b"
-  integrity sha512-zbnKz/ZACLxoJG3wnCXh3zDb8nMH+yjTgYV8uZ4pHUFiS/E2q8kBd4rl+JhP+Jk6Ug7VY14Ol+6HrNoUidN/hQ==
+netlify-cms-lib-util@^2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-lib-util/-/netlify-cms-lib-util-2.12.0.tgz#5ed260529f08d94f6957d20fd1b351a841d5538e"
+  integrity sha512-2l81lYNkc2YLzzWfVwgB9nPqHwjtNc0ohvIFJEeVXfMQVMmnI8XyMY2aPsiyu4g8/DIOAq0KMrlPz1mvHYo3oQ==
   dependencies:
     js-sha256 "^0.9.0"
     localforage "^1.7.3"
     semaphore "^1.1.0"
 
-netlify-cms-locales@^1.19.0:
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/netlify-cms-locales/-/netlify-cms-locales-1.19.0.tgz#79df483f0e7b0d10eb2cdd5eafc6a0574c9ec637"
-  integrity sha512-Rz4pDWjAj8BBqOZ9zODw9VFgzmmzUR7BOcduSeEOxCjieXkpkBEerynU0osmqR982001Oj6JLTBmtcNA0fVX4w==
+netlify-cms-locales@^1.20.0:
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-locales/-/netlify-cms-locales-1.20.0.tgz#e4e65003530d9cf57e02f300e9466737578a6455"
+  integrity sha512-wHIGpMnMSNdd+9bp5+WJTyx0/0EA+i7s6mqvtEj9eCps6WKySmydgWeHsqhLTm5Ej1R6DrmGFq4K68ZQWCENqQ==
 
 netlify-cms-media-library-cloudinary@1.3.8:
   version "1.3.8"
@@ -11789,10 +11798,10 @@ netlify-cms-media-library-uploadcare@0.5.9:
     uploadcare-widget "^3.7.0"
     uploadcare-widget-tab-effects "^1.4.0"
 
-netlify-cms-ui-default@^2.11.6:
-  version "2.11.6"
-  resolved "https://registry.yarnpkg.com/netlify-cms-ui-default/-/netlify-cms-ui-default-2.11.6.tgz#5c672c8fbf15706009fdd15b56eb62dd6d18e6ed"
-  integrity sha512-ifmcs+2K7IyKijkzRgZV3W1M0z9EFJi0nYqoQP+XTV1LR7bIm+tmaU3YcN4JSs21hjRRdXd+x4k14NEu+34XEg==
+netlify-cms-ui-default@^2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-ui-default/-/netlify-cms-ui-default-2.12.0.tgz#f401b257dfcd9806ad3abb37d43dc3e94a153824"
+  integrity sha512-ljtqQHBwazFjyIcwvv4Iiab9ArDlvuLnTER9K2is/oMQBa//E+zZfM7AkGavZzq2As2hGCpo7uu0UevombLAag==
   dependencies:
     react-aria-menubutton "^6.0.0"
     react-toggled "^1.1.2"
