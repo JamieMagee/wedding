@@ -37,7 +37,7 @@
     "react-dom": "16.14.0",
     "react-ga": "3.3.0",
     "react-helmet": "6.1.0",
-    "react-modal": "3.13.1",
+    "react-modal": "3.14.2",
     "remark": "12.0.1",
     "remark-html": "12.0.0",
     "remark-preset-lint-recommended": "4.0.1",
