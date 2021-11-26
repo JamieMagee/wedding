@@ -1,0 +1,678 @@
+/*!
+   * Pusher JavaScript Library v1.12.2
+   * http://pusherapp.com/
+   *
+   * Copyright 2011, Pusher
+   * Released under the MIT licence.
+   */
+
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * Sizzle CSS Selector Engine v2.3.6
+ * https://sizzlejs.com/
+ *
+ * Copyright JS Foundation and other contributors
+ * Released under the MIT license
+ * https://js.foundation/
+ *
+ * Date: 2021-02-16
+ */
+
+/*!
+ * jQuery JavaScript Library v3.6.0
+ * https://jquery.com/
+ *
+ * Includes Sizzle.js
+ * https://sizzlejs.com/
+ *
+ * Copyright OpenJS Foundation and other contributors
+ * Released under the MIT license
+ * https://jquery.org/license
+ *
+ * Date: 2021-03-02T17:08Z
+ */
+
+/*!
+ * repeat-string <https://github.com/jonschlinkert/repeat-string>
+ *
+ * Copyright (c) 2014-2015, Jon Schlinkert.
+ * Licensed under the MIT License.
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module final-newline
+ * @fileoverview
+ *   Warn when a line feed at the end of a file is missing.
+ *   Empty files are allowed.
+ *
+ *   See [StackExchange](https://unix.stackexchange.com/questions/18743) for why.
+ *
+ *   ## Fix
+ *
+ *   [`remark-stringify`](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-stringify)
+ *   always adds a final line feed to files.
+ *
+ *   See [Using remark to fix your Markdown](https://github.com/remarkjs/remark-lint#using-remark-to-fix-your-markdown)
+ *   on how to automatically fix warnings for this rule.
+ *
+ *   ## Example
+ *
+ *   ##### `ok.md`
+ *
+ *   ###### In
+ *
+ *   Note: `␊` represents LF.
+ *
+ *   ```markdown
+ *   Alpha␊
+ *   ```
+ *
+ *   ###### Out
+ *
+ *   No messages.
+ *
+ *   ##### `not-ok.md`
+ *
+ *   ###### In
+ *
+ *   Note: The below file does not have a final newline.
+ *
+ *   ```markdown
+ *   Bravo
+ *   ```
+ *
+ *   ###### Out
+ *
+ *   ```text
+ *   1:1: Missing newline character at end of file
+ *   ```
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module hard-break-spaces
+ * @fileoverview
+ *   Warn when too many spaces are used to create a hard break.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   Lorem ipsum··
+ *   dolor sit amet
+ *
+ * @example {"name": "not-ok.md", "label": "input"}
+ *
+ *   Lorem ipsum···
+ *   dolor sit amet.
+ *
+ * @example {"name": "not-ok.md", "label": "output"}
+ *
+ *   1:12-2:1: Use two spaces for hard line breaks
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module list-item-bullet-indent
+ * @fileoverview
+ *   Warn when list item bullets are indented.
+ *
+ *   ## Fix
+ *
+ *   [`remark-stringify`](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-stringify)
+ *   removes all indentation before bullets.
+ *
+ *   See [Using remark to fix your Markdown](https://github.com/remarkjs/remark-lint#using-remark-to-fix-your-markdown)
+ *   on how to automatically fix warnings for this rule.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   Paragraph.
+ *
+ *   * List item
+ *   * List item
+ *
+ * @example {"name": "not-ok.md", "label": "input"}
+ *
+ *   Paragraph.
+ *
+ *   ·* List item
+ *   ·* List item
+ *
+ * @example {"name": "not-ok.md", "label": "output"}
+ *
+ *   3:3: Incorrect indentation before bullet: remove 1 space
+ *   4:3: Incorrect indentation before bullet: remove 1 space
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module list-item-indent
+ * @fileoverview
+ *   Warn when the spacing between a list item’s bullet and its content violates
+ *   a given style.
+ *
+ *   Options: `'tab-size'`, `'mixed'`, or `'space'`, default: `'tab-size'`.
+ *
+ *   ## Fix
+ *
+ *   [`remark-stringify`](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-stringify)
+ *   uses `'tab-size'` (named `'tab'` there) by default to ensure Markdown is
+ *   seen the same way across vendors.
+ *   This can be configured with the
+ *   [`listItemIndent`](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-stringify#optionslistitemindent)
+ *   option.
+ *   This rule’s `'space'` option is named `'1'` there.
+ *
+ *   See [Using remark to fix your Markdown](https://github.com/remarkjs/remark-lint#using-remark-to-fix-your-markdown)
+ *   on how to automatically fix warnings for this rule.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   *···List
+ *   ····item.
+ *
+ *   Paragraph.
+ *
+ *   11.·List
+ *   ····item.
+ *
+ *   Paragraph.
+ *
+ *   *···List
+ *   ····item.
+ *
+ *   *···List
+ *   ····item.
+ *
+ * @example {"name": "ok.md", "setting": "mixed"}
+ *
+ *   *·List item.
+ *
+ *   Paragraph.
+ *
+ *   11.·List item
+ *
+ *   Paragraph.
+ *
+ *   *···List
+ *   ····item.
+ *
+ *   *···List
+ *   ····item.
+ *
+ * @example {"name": "ok.md", "setting": "space"}
+ *
+ *   *·List item.
+ *
+ *   Paragraph.
+ *
+ *   11.·List item
+ *
+ *   Paragraph.
+ *
+ *   *·List
+ *   ··item.
+ *
+ *   *·List
+ *   ··item.
+ *
+ * @example {"name": "not-ok.md", "setting": "space", "label": "input"}
+ *
+ *   *···List
+ *   ····item.
+ *
+ * @example {"name": "not-ok.md", "setting": "space", "label": "output"}
+ *
+ *    1:5: Incorrect list-item indent: remove 2 spaces
+ *
+ * @example {"name": "not-ok.md", "setting": "tab-size", "label": "input"}
+ *
+ *   *·List
+ *   ··item.
+ *
+ * @example {"name": "not-ok.md", "setting": "tab-size", "label": "output"}
+ *
+ *    1:3: Incorrect list-item indent: add 2 spaces
+ *
+ * @example {"name": "not-ok.md", "setting": "mixed", "label": "input"}
+ *
+ *   *···List item.
+ *
+ * @example {"name": "not-ok.md", "setting": "mixed", "label": "output"}
+ *
+ *    1:5: Incorrect list-item indent: remove 2 spaces
+ *
+ * @example {"name": "not-ok.md", "setting": "💩", "label": "output", "config": {"positionless": true}}
+ *
+ *    1:1: Incorrect list-item indent style `💩`: use either `'tab-size'`, `'space'`, or `'mixed'`
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module no-auto-link-without-protocol
+ * @fileoverview
+ *   Warn for autolinks without protocol.
+ *   Autolinks are URLs enclosed in `<` (less than) and `>` (greater than)
+ *   characters.
+ *
+ *   ## Fix
+ *
+ *   [`remark-stringify`](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-stringify)
+ *   adds a protocol where needed.
+ *
+ *   See [Using remark to fix your Markdown](https://github.com/remarkjs/remark-lint#using-remark-to-fix-your-markdown)
+ *   on how to automatically fix warnings for this rule.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   <http://www.example.com>
+ *   <mailto:foo@bar.com>
+ *
+ *   Most Markdown vendors don’t recognize the following as a link:
+ *   <www.example.com>
+ *
+ * @example {"name": "not-ok.md", "label": "input"}
+ *
+ *   <foo@bar.com>
+ *
+ * @example {"name": "not-ok.md", "label": "output"}
+ *
+ *   1:1-1:14: All automatic links must start with a protocol
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module no-blockquote-without-marker
+ * @fileoverview
+ *   Warn when blank lines without `>` (greater than) markers are found in a
+ *   block quote.
+ *
+ *   ## Fix
+ *
+ *   [`remark-stringify`](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-stringify)
+ *   adds markers to every line in a block quote.
+ *
+ *   See [Using remark to fix your Markdown](https://github.com/remarkjs/remark-lint#using-remark-to-fix-your-markdown)
+ *   on how to automatically fix warnings for this rule.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   > Foo…
+ *   > …bar…
+ *   > …baz.
+ *
+ * @example {"name": "not-ok.md", "label": "input"}
+ *
+ *   > Foo…
+ *   …bar…
+ *   > …baz.
+ *
+ * @example {"name": "not-ok.md", "label": "output"}
+ *
+ *   2:1: Missing marker in block quote
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module no-duplicate-definitions
+ * @fileoverview
+ *   Warn when duplicate definitions are found.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   [foo]: bar
+ *   [baz]: qux
+ *
+ * @example {"name": "not-ok.md", "label": "input"}
+ *
+ *   [foo]: bar
+ *   [foo]: qux
+ *
+ * @example {"name": "not-ok.md", "label": "output"}
+ *
+ *   2:1-2:11: Do not use definitions with the same identifier (1:1)
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module no-heading-content-indent
+ * @fileoverview
+ *   Warn when content of headings is indented.
+ *
+ *   ## Fix
+ *
+ *   [`remark-stringify`](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-stringify)
+ *   removes all unneeded padding around content in headings.
+ *
+ *   See [Using remark to fix your Markdown](https://github.com/remarkjs/remark-lint#using-remark-to-fix-your-markdown)
+ *   on how to automatically fix warnings for this rule.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   #·Foo
+ *
+ *   ## Bar·##
+ *
+ *     ##·Baz
+ *
+ *   Setext headings are not affected.
+ *
+ *   Baz
+ *   ===
+ *
+ * @example {"name": "not-ok.md", "label": "input"}
+ *
+ *   #··Foo
+ *
+ *   ## Bar··##
+ *
+ *     ##··Baz
+ *
+ * @example {"name": "not-ok.md", "label": "output"}
+ *
+ *   1:4: Remove 1 space before this heading’s content
+ *   3:7: Remove 1 space after this heading’s content
+ *   5:7: Remove 1 space before this heading’s content
+ *
+ * @example {"name": "empty-heading.md"}
+ *
+ *   #··
+ *
+ * @example {"name": "tight.md", "config":{"pedantic":true}, "label": "input"}
+ *
+ *   In pedantic mode, headings without spacing can also be detected:
+ *
+ *   ##No spacing left, too much right··##
+ *
+ * @example {"name": "tight.md", "label": "output"}
+ *
+ *   3:3: Add 1 space before this heading’s content
+ *   3:34: Remove 1 space after this heading’s content
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module no-inline-padding
+ * @fileoverview
+ *   Warn when phrasing content is padded with spaces between their markers and
+ *   content.
+ *
+ *   Warns for emphasis, strong, delete, image, and link.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   Alpha, *bravo*, _charlie_, [delta](http://echo.fox/trot)
+ *
+ * @example {"name": "not-ok.md", "label": "input"}
+ *
+ *   Alpha, * bravo *, _ charlie _, [ delta ](http://echo.fox/trot)
+ *
+ * @example {"name": "not-ok.md", "label": "output"}
+ *
+ *   1:8-1:17: Don’t pad `emphasis` with inner spaces
+ *   1:19-1:30: Don’t pad `emphasis` with inner spaces
+ *   1:32-1:63: Don’t pad `link` with inner spaces
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module no-literal-urls
+ * @fileoverview
+ *   Warn for literal URLs in text.
+ *   URLs are treated as links in some Markdown vendors, but not in others.
+ *   To make sure they are always linked, wrap them in `<` (less than) and `>`
+ *   (greater than).
+ *
+ *   ## Fix
+ *
+ *   [`remark-stringify`](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-stringify)
+ *   never creates literal URLs and always uses `<` (less than) and `>`
+ *   (greater than).
+ *
+ *   See [Using remark to fix your Markdown](https://github.com/remarkjs/remark-lint#using-remark-to-fix-your-markdown)
+ *   on how to automatically fix warnings for this rule.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   <http://foo.bar/baz>
+ *
+ * @example {"name": "not-ok.md", "label": "input"}
+ *
+ *   http://foo.bar/baz
+ *
+ * @example {"name": "not-ok.md", "label": "output"}
+ *
+ *   1:1-1:19: Don’t use literal URLs without angle brackets
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module no-shortcut-reference-image
+ * @fileoverview
+ *   Warn when shortcut reference images are used.
+ *
+ *   Shortcut references render as images when a definition is found, and as
+ *   plain text without definition.
+ *   Sometimes, you don’t intend to create an image from the reference, but this
+ *   rule still warns anyway.
+ *   In that case, you can escape the reference like so: `!\[foo]`.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   ![foo][]
+ *
+ *   [foo]: http://foo.bar/baz.png
+ *
+ * @example {"name": "not-ok.md", "label": "input"}
+ *
+ *   ![foo]
+ *
+ *   [foo]: http://foo.bar/baz.png
+ *
+ * @example {"name": "not-ok.md", "label": "output"}
+ *
+ *   1:1-1:7: Use the trailing [] on reference images
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module no-shortcut-reference-link
+ * @fileoverview
+ *   Warn when shortcut reference links are used.
+ *
+ *   Shortcut references render as links when a definition is found, and as
+ *   plain text without definition.
+ *   Sometimes, you don’t intend to create a link from the reference, but this
+ *   rule still warns anyway.
+ *   In that case, you can escape the reference like so: `\[foo]`.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   [foo][]
+ *
+ *   [foo]: http://foo.bar/baz
+ *
+ * @example {"name": "not-ok.md", "label": "input"}
+ *
+ *   [foo]
+ *
+ *   [foo]: http://foo.bar/baz
+ *
+ * @example {"name": "not-ok.md", "label": "output"}
+ *
+ *   1:1-1:6: Use the trailing `[]` on reference links
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module ordered-list-marker-style
+ * @fileoverview
+ *   Warn when the list item marker style of ordered lists violate a given style.
+ *
+ *   Options: `'consistent'`, `'.'`, or `')'`, default: `'consistent'`.
+ *
+ *   `'consistent'` detects the first used list style and warns when subsequent
+ *   lists use different styles.
+ *
+ *   Note: `)` is only supported in CommonMark.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   1.  Foo
+ *
+ *
+ *   1.  Bar
+ *
+ *   Unordered lists are not affected by this rule.
+ *
+ *   * Foo
+ *
+ * @example {"name": "ok.md", "setting": "."}
+ *
+ *   1.  Foo
+ *
+ *   2.  Bar
+ *
+ * @example {"name": "ok.md", "setting": ")", "config": {"commonmark": true}}
+ *
+ *   <!-- This requires commonmark. -->
+ *
+ *   1)  Foo
+ *
+ *   2)  Bar
+ *
+ * @example {"name": "not-ok.md", "label": "input", "config": {"commonmark": true}}
+ *
+ *   1.  Foo
+ *
+ *   2)  Bar
+ *
+ * @example {"name": "not-ok.md", "label": "output"}
+ *
+ *   3:1-3:8: Marker style should be `.`
+ *
+ * @example {"name": "not-ok.md", "label": "output", "setting": "💩", "config": {"positionless": true}}
+ *
+ *   1:1: Incorrect ordered list item marker style `💩`: use either `'.'` or `')'`
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2016 Titus Wormer
+ * @license MIT
+ * @module no-undefined-references
+ * @fileoverview
+ *   Warn when references to undefined definitions are found.
+ *
+ *   Options: `Object`, optional.
+ *
+ *   The object can have an `allow` field, set to an array of strings that may
+ *   appear between `[` and `]`, but that should not be treated as link
+ *   identifiers.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   [foo][]
+ *
+ *   [foo]: https://example.com
+ *
+ * @example {"name": "ok-allow.md", "setting": {"allow": ["...", "…"]}}
+ *
+ *   > Eliding a portion of a quoted passage […] is acceptable.
+ *
+ * @example {"name": "not-ok.md", "label": "input"}
+ *
+ *   [bar][]
+ *
+ * @example {"name": "not-ok.md", "label": "output"}
+ *
+ *   1:1-1:8: Found reference to undefined definition
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2016 Titus Wormer
+ * @license MIT
+ * @module no-unused-definitions
+ * @fileoverview
+ *   Warn when unused definitions are found.
+ *
+ * @example {"name": "ok.md"}
+ *
+ *   [foo][]
+ *
+ *   [foo]: https://example.com
+ *
+ * @example {"name": "not-ok.md", "label": "input"}
+ *
+ *   [bar]: https://example.com
+ *
+ * @example {"name": "not-ok.md", "label": "output"}
+ *
+ *   1:1-1:27: Found unused definition
+ */
+
+/**
+ * @license uploadcare-widget v3.12.0
+ *
+ * Copyright (c) 2020 Uploadcare, Inc.
+ *
+ * This source code is licensed under the BSD 2-Clause License
+ * found in the LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * [js-sha256]{@link https://github.com/emn178/js-sha256}
+ *
+ * @version 0.9.0
+ * @author Chen, Yi-Cyuan [emn178@gmail.com]
+ * @copyright Chen, Yi-Cyuan 2014-2017
+ * @license MIT
+ */
+
+/** @license React v16.14.0
+ * react-dom-server.browser.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
