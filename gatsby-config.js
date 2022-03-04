@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/wedding',
   plugins: [
     'gatsby-plugin-react-helmet',
     {
